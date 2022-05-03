@@ -1,0 +1,30 @@
+.btn-default {
+    color: #fff;
+    background-color: #878d93;
+    border-color: black;
+    /*set the color you want here*/
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open>.dropdown-toggle.btn-default {
+    color: #fff;
+    background-color: #e9eef3;
+    border-color: black;
+    /*set the color you want here*/
+}
+
+.btn {
+    width: 90px;
+}
+
+.font-size {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.font-size1 {
+    font-size: 14px;
+}
