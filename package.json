@@ -1,0 +1,23 @@
+{
+  "name": "gomeetify-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aktest12/Gomeetify-Test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aktest12/Gomeetify-Test/issues"
+  },
+  "homepage": "https://github.com/aktest12/Gomeetify-Test#readme",
+  "dependencies": {
+    "electron": "^18.2.0"
+  }
+}
