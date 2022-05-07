@@ -19,6 +19,26 @@
   "homepage": "https://github.com/aktest12/Gomeetify-Test#readme",
   "dependencies": {
     "electron": "^18.2.0",
+    "electron-builder": "^23.0.3",
     "electron-updater": "^5.0.1"
+  },
+  "build": {
+    "appId": "com.Gomeetify.app",
+    "productName": "Gomeetify",
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "asar": true,
+    "asarUnpack": [
+      "lib/store"
+    ],
+    "nsis": {
+      "uninstallDisplayName": "Gomeetify",
+      "license": "license",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": false
+    }
   }
 }
