@@ -1,10 +1,11 @@
 {
   "name": "gomeetify-test",
-  "version": "1.0.0",
+  "version": "0.9.0",
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dev":"electron-builder -w"
   },
   "repository": {
     "type": "git",
@@ -18,14 +19,15 @@
   },
   "homepage": "https://github.com/aktest12/Gomeetify-Test#readme",
   "dependencies": {
-    "electron": "^18.2.0",
-    "electron-builder": "^23.0.3",
     "electron-updater": "^5.0.1"
   },
   "build": {
     "appId": "com.Gomeetify.app",
     "productName": "Gomeetify",
     "win": {
+      "publish": [
+        "github"
+      ],
       "target": [
         "nsis"
       ]
@@ -36,9 +38,12 @@
     ],
     "nsis": {
       "uninstallDisplayName": "Gomeetify",
-      "license": "license",
       "oneClick": false,
       "allowToChangeInstallationDirectory": false
     }
+  },
+  "devDependencies": {
+    "electron": "^18.2.0",
+    "electron-builder": "^23.0.3"
   }
 }

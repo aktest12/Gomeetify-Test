@@ -36,9 +36,16 @@ ipcMain.on('msg',function(event){
     /* event.sender.send('rev',); */
 });
 
+
+Object.defineProperty(app, 'isPackaged', {
+    get() {
+        return true;
+    }
+});
+
 /*Checking updates just after app launch and also notify for the same*/
 app.on("ready", function () {
-    autoUpdater.checkForUpdatesAndNotify();
+    autoUpdater.checkForUpdates();
 });
 
 function createWindow() {
