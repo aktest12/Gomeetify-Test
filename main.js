@@ -16,15 +16,11 @@ function createWindow () {
   mainWindow.on('closed', function () {
     mainWindow = null;
   });
-  mainWindow.webContents.openDevTools()
-  mainWindow.once('ready-to-show', () => {
-   
-  });
 }
 
 app.on('ready', () => {
   createWindow();
-  autoUpdater.checkForUpdatesAndNotify();
+   autoUpdater.checkForUpdatesAndNotify();
 });
 
 app.on('window-all-closed', function () {
@@ -55,9 +51,8 @@ ipcMain.on('restart_app', () => {
   autoUpdater.quitAndInstall();
 });
 
-
-/* Object.defineProperty(app, 'isPackaged', {
+Object.defineProperty(app, 'isPackaged', {
   get() {
     return true;
   }
-}); */
+});
